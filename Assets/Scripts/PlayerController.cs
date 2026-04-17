@@ -26,21 +26,21 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-       rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         if (isGiant)
         {
             if (moveInput < 0)
-                transform.localScale = new Vector3(2, 2, 2);
-            else if (moveInput > 0)
                 transform.localScale = new Vector3(-2, 2, 2);
+            else if (moveInput > 0)
+                transform.localScale = new Vector3(2, 2, 2);
         }
         else
         {
             if (moveInput < 0)
-                transform.localScale = new Vector3(1, 1, 1);
-            else if (moveInput > 0)
                 transform.localScale = new Vector3(-1, 1, 1);
+            else if (moveInput > 0)
+                transform.localScale = new Vector3(1, 1, 1);
         }
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        if(collision.CompareTag("Finish"))
+        if (collision.CompareTag("Finish"))
         {
             collision.GetComponent<LevelObject>().MoveToNextLevel();
         }
