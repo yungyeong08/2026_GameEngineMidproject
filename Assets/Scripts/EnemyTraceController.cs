@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class EnemyTraceController : MonoBehaviour
 {
-    public float moveSpeed = 2f;
+    public float defaultSpeed = 2f; // 기본 속도 설정값
+    public float moveSpeed;         // 현재 속도
     public float raycastDistance = 0.5f;
     public float traceDistance = 5f;
 
@@ -10,7 +11,8 @@ public class EnemyTraceController : MonoBehaviour
 
     private void Start()
     {
-        moveSpeed = 2f;
+        // [추가] 스테이지 시작 시 속도를 기본값으로 초기화
+        moveSpeed = defaultSpeed;
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null) player = playerObj.transform;
@@ -27,14 +29,12 @@ public class EnemyTraceController : MonoBehaviour
 
         Vector2 directionNormalized = direction.normalized;
 
-        // 레이캐스트로 장애물 확인
+        // 레이캐스트 장애물 체크 (태그는 Obstacle 사용)
         RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, directionNormalized, raycastDistance);
-        Debug.DrawRay(transform.position, directionNormalized * raycastDistance, Color.red);
 
         bool isBlocked = false;
         foreach (RaycastHit2D rHit in hits)
         {
-            // 오타 수정: Obsracle -> Obstacle (유니티 태그도 Obstacle로 만드세요!)
             if (rHit.collider != null && rHit.collider.CompareTag("Obstacle"))
             {
                 isBlocked = true;
@@ -44,13 +44,11 @@ public class EnemyTraceController : MonoBehaviour
 
         if (isBlocked)
         {
-            // 장애물이 있으면 우회 시도
             Vector3 alternativeDirection = Quaternion.Euler(0f, 0f, -90f) * directionNormalized;
             transform.Translate(alternativeDirection * moveSpeed * Time.deltaTime, Space.World);
         }
         else
         {
-            // 장애물 없으면 플레이어 추적
             transform.Translate(directionNormalized * moveSpeed * Time.deltaTime, Space.World);
         }
     }

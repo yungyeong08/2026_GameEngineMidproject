@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Platform
   - Obstacle
+  - Key
+  - JumpItem
+  - SpeedItem
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Invincible
-  - 
+  - Item
   - 
   - 
   - 
