@@ -128,14 +128,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2806653609109107831, guid: c66df3403afe8d34bb1d46453f721837, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5.8295665
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806653609109107831, guid: c66df3403afe8d34bb1d46453f721837, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5.9920554
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806653609109107831, guid: c66df3403afe8d34bb1d46453f721837, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.2348
       objectReference: {fileID: 0}
@@ -195,18 +187,6 @@ PrefabInstance:
     - target: {fileID: 1597569144821303859, guid: 19b37fcc8efc4f946b607692789c8de6, type: 3}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6115146660106009232, guid: 19b37fcc8efc4f946b607692789c8de6, type: 3}
-      propertyPath: moveSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6115146660106009232, guid: 19b37fcc8efc4f946b607692789c8de6, type: 3}
-      propertyPath: traceDistance
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6115146660106009232, guid: 19b37fcc8efc4f946b607692789c8de6, type: 3}
-      propertyPath: raycastDistance
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6566032376872314819, guid: 19b37fcc8efc4f946b607692789c8de6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1522,10 +1502,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5044938887819562337, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5358947737664222570, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.3628
@@ -1566,26 +1542,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5628514257980236777, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-      propertyPath: needsKey
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628514257980236777, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-      propertyPath: jumpForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628514257980236777, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628514257980236777, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-      propertyPath: groundCheck
-      value: 
-      objectReference: {fileID: 1586540418}
-    - target: {fileID: 5628514257980236777, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1604,6 +1560,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1426338860261770014, guid: c708743936691284d98979d7399396b2, type: 3}
+      propertyPath: nextLevel
+      value: Level_5
+      objectReference: {fileID: 0}
     - target: {fileID: 3038847460059162023, guid: c708743936691284d98979d7399396b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.96
@@ -1647,10 +1607,6 @@ PrefabInstance:
     - target: {fileID: 3984085353313577994, guid: c708743936691284d98979d7399396b2, type: 3}
       propertyPath: m_Name
       value: Goal
-      objectReference: {fileID: 0}
-    - target: {fileID: 8234569922968192009, guid: c708743936691284d98979d7399396b2, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4155,11 +4111,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!4 &1586540418 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1680564193689559980, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-  m_PrefabInstance: {fileID: 701779861}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2003937672
 GameObject:
   m_ObjectHideFlags: 0

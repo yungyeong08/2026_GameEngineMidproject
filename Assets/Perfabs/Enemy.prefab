@@ -152,6 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTraceController
   defaultSpeed: 4
-  moveSpeed: 2
-  raycastDistance: 9
-  traceDistance: 9
+  moveSpeed: 3
+  raycastDistance: 5
+  traceDistance: 7

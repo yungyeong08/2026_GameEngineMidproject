@@ -539,18 +539,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5044938887819562337, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5044938887819562337, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5044938887819562337, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5358947737664222570, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.06
@@ -591,16 +579,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5628514257980236777, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
+      propertyPath: needsKey
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628514257980236777, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
+      propertyPath: jumpForce
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4972609165830750608, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 686598661}
   m_SourcePrefab: {fileID: 100100000, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
 --- !u!4 &686598659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5358947737664222570, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
   m_PrefabInstance: {fileID: 686598658}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &686598660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4972609165830750608, guid: 85091e952d127ec4b93aec0b82efb950, type: 3}
+  m_PrefabInstance: {fileID: 686598658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &686598661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686598660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6de4aba21017c4abb6d59de819fb28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelObject
+  nextLevel: Start
 --- !u!1 &702097284
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,10 +808,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1426338860261770014, guid: c708743936691284d98979d7399396b2, type: 3}
-      propertyPath: nextLevel
-      value: Start
-      objectReference: {fileID: 0}
     - target: {fileID: 3038847460059162023, guid: c708743936691284d98979d7399396b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.89
@@ -838,18 +851,6 @@ PrefabInstance:
     - target: {fileID: 3984085353313577994, guid: c708743936691284d98979d7399396b2, type: 3}
       propertyPath: m_Name
       value: Goal
-      objectReference: {fileID: 0}
-    - target: {fileID: 8234569922968192009, guid: c708743936691284d98979d7399396b2, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8234569922968192009, guid: c708743936691284d98979d7399396b2, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8234569922968192009, guid: c708743936691284d98979d7399396b2, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
