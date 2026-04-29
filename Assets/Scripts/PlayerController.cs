@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
 
     private float originalMoveSpeed;
 
+    float score;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -39,6 +41,8 @@ public class PlayerController : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         originalJumpForce = jumpForce;
         originalMoveSpeed = moveSpeed;
+
+        score = 0f;
     }
 
     private void Update()
@@ -99,6 +103,8 @@ public class PlayerController : MonoBehaviour
         // 3. 골인 지점 ("Finish" 태그)
         if (collision.CompareTag("Finish"))
         {
+            HighScore.TrySet(SceneManager.GetActiveScene().buildIndex, (int)Time.timeSinceLevelLoad);
+
             // 열쇠가 필요 없는 스테이지거나, 필요할 때 열쇠가 있으면 통과
             if (!needsKey || (needsKey && hasKey))
             {
@@ -116,6 +122,7 @@ public class PlayerController : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(InvincibleRoutine());
             Destroy(collision.gameObject);
+            score += 10f;
         }
 
         if (collision.CompareTag("JumpItem"))
