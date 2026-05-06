@@ -170,6 +170,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7153034, y: 1.0358014}
   m_EdgeRadius: 0
+--- !u!114 &412906898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412906894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: febd5c46d14d0ab45b4ddcc4ed6ec878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemObject
+  date: {fileID: 11400000, guid: 0cb9842b8ef503e4ba6be530a934aaa2, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3077,6 +3090,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6d0330013f3d1fc4fa9761599ee3812e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 412906897}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6d0330013f3d1fc4fa9761599ee3812e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 412906898}
   m_SourcePrefab: {fileID: 100100000, guid: 6d0330013f3d1fc4fa9761599ee3812e, type: 3}
 --- !u!1 &2003937672
 GameObject:

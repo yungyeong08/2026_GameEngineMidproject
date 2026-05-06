@@ -256,6 +256,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cf321891aa8849c498421ab65e810155, type: 3}
       insertIndex: -1
       addedObject: {fileID: 412921706}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cf321891aa8849c498421ab65e810155, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 412921707}
   m_SourcePrefab: {fileID: 100100000, guid: cf321891aa8849c498421ab65e810155, type: 3}
 --- !u!1 &412921705 stripped
 GameObject:
@@ -308,6 +311,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8088198, y: 0.95500743}
   m_EdgeRadius: 0
+--- !u!114 &412921707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412921705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: febd5c46d14d0ab45b4ddcc4ed6ec878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemObject
+  date: {fileID: 11400000, guid: 936c6b7abc3197f4ba28028aba4ecd48, type: 2}
 --- !u!1001 &511438818
 PrefabInstance:
   m_ObjectHideFlags: 0

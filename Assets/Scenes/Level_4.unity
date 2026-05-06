@@ -304,6 +304,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 30f6077ae319d2d44847e30ff97a2215, type: 3}
       insertIndex: -1
       addedObject: {fileID: 480873072}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 30f6077ae319d2d44847e30ff97a2215, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 480873073}
   m_SourcePrefab: {fileID: 100100000, guid: 30f6077ae319d2d44847e30ff97a2215, type: 3}
 --- !u!1 &480873071 stripped
 GameObject:
@@ -356,6 +359,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.9908231}
   m_EdgeRadius: 0
+--- !u!114 &480873073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480873071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: febd5c46d14d0ab45b4ddcc4ed6ec878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemObject
+  date: {fileID: 11400000, guid: 936c6b7abc3197f4ba28028aba4ecd48, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,6 +1925,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cc691bc76db02e34383acb10778483ea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1332702790}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: cc691bc76db02e34383acb10778483ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1332702792}
   m_SourcePrefab: {fileID: 100100000, guid: cc691bc76db02e34383acb10778483ea, type: 3}
 --- !u!1 &1332702789 stripped
 GameObject:
@@ -1961,6 +1980,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.52861977, y: 1.0428524}
   m_EdgeRadius: 0
+--- !u!1 &1332702791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: cc691bc76db02e34383acb10778483ea, type: 3}
+  m_PrefabInstance: {fileID: 1332702788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1332702792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332702791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: febd5c46d14d0ab45b4ddcc4ed6ec878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemObject
+  date: {fileID: 11400000, guid: 0cb9842b8ef503e4ba6be530a934aaa2, type: 2}
 --- !u!1 &1485543722
 GameObject:
   m_ObjectHideFlags: 0

@@ -103,7 +103,8 @@ public class PlayerController : MonoBehaviour
         // 3. 골인 지점 ("Finish" 태그)
         if (collision.CompareTag("Finish"))
         {
-            HighScore.TrySet(SceneManager.GetActiveScene().buildIndex, (int)Time.timeSinceLevelLoad);
+            //HighScore.TrySet(SceneManager.GetActiveScene().buildIndex, (int)Time.timeSinceLevelLoad);
+            StageResultSaver.SaveStage(SceneManager.GetActiveScene().buildIndex, (int)score);
 
             // 열쇠가 필요 없는 스테이지거나, 필요할 때 열쇠가 있으면 통과
             if (!needsKey || (needsKey && hasKey))
@@ -121,8 +122,9 @@ public class PlayerController : MonoBehaviour
         {
             StopAllCoroutines();
             StartCoroutine(InvincibleRoutine());
+            score += collision.GetComponent<ItemObject>().GetPoint(); // 아이템마다 점수 다르게 설정 가능
             Destroy(collision.gameObject);
-            score += 10f;
+            
         }
 
         if (collision.CompareTag("JumpItem"))
@@ -130,6 +132,8 @@ public class PlayerController : MonoBehaviour
             StopCoroutine("JumpBoostRoutine"); // 이미 실행 중이면 멈추고 새로 시작
             StartCoroutine(JumpBoostRoutine());
             Destroy(collision.gameObject);
+            score += collision.GetComponent<ItemObject>().GetPoint();
+
         }
 
         if (collision.CompareTag("SpeedItem"))
@@ -137,6 +141,7 @@ public class PlayerController : MonoBehaviour
             StopCoroutine("SpeedBoostRoutine"); // 이미 실행 중이면 멈추고 새로 시작
             StartCoroutine(SpeedBoostRoutine());
             Destroy(collision.gameObject);
+            score += collision.GetComponent<ItemObject>().GetPoint();
         }
     }
 
